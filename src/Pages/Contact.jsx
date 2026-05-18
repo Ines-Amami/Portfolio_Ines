@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 
-const SERVICE_ID  = "ines_Gmail";   
-const TEMPLATE_ID = "template_0";  
-const PUBLIC_KEY  = "Le60AUvw7y2xmtnCX";   
+const SERVICE_ID  = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY  = import.meta.env.VITE_PUBLIC_KEY;
 
 const Contact = () => {
   const formRef = useRef();
