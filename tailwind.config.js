@@ -1,0 +1,20 @@
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: { keyframes: {
+              swing: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+      },
+      animation: {
+        swing: 'swing 2s ease-in-out infinite',
+      },
+    },
+
+  },
+  plugins: [],
+}

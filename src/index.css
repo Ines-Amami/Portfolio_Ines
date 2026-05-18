@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --rose: #c4637a;
+  --plum: #3d2235;
+  --mauve: #7a4f6d;
+  --blush: #fdf6ef;
+  --petal: #f5e0d8;
+  --lavender: #e8d5f0;
+}
+
+body {
+  background-color: #fdf6ef;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── LOGO ── */
+#Name {
+  font-family: "Great Vibes", cursive;
+}
+
+/* ── SKILLS LABELS ── */
+#Test {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* ── NAV LOGO SHIMMER ── */
+@keyframes shimmerLogo {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.logo-shimmer {
+  background: linear-gradient(90deg, #7a4f6d, #c4637a, #7a4f6d);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerLogo 4s linear infinite;
+}
+
+/* ── SKILL FLOW DOTS ── */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  animation: flow 1.5s linear infinite;
+}
+
+.reverse {
+  animation: flowReverse 1.5s linear infinite;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+
+@keyframes flow {
+  0%   { transform: translateX(-20px); opacity: 0; }
+  50%  { opacity: 1; }
+  100% { transform: translateX(80px); opacity: 0; }
+}
+
+@keyframes flowReverse {
+  0%   { transform: translateX(20px); opacity: 0; }
+  50%  { opacity: 1; }
+  100% { transform: translateX(-80px); opacity: 0; }
+}
+
+/* ── HERO BLOB ANIMATIONS ── */
+@keyframes blobDrift1 {
+  0%, 100% { transform: scale(1) translate(0, 0); }
+  40%       { transform: scale(1.07) translate(12px, -10px); }
+  70%       { transform: scale(0.95) translate(-8px, 10px); }
+}
+
+@keyframes blobDrift2 {
+  0%, 100% { transform: scale(1) translate(0, 0); }
+  50%       { transform: scale(1.1) translate(-8px, 8px); }
+}
+
+@keyframes blobDrift3 {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.08) translate(6px, -6px); }
+}
+
+/* ── TOOLTIP (Skills bubbles) ── */
+.tooltip {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ── AOS POINTER FIX ── */
+[data-aos] {
+  pointer-events: none;
+}
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
