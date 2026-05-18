@@ -74,7 +74,17 @@ export default function LoadingScreen({ onComplete }) {
         
 
         <div className="ls-center">
-          <div className="ls-name">Ines</div>
+          <div className="ls-name"style={{
+    fontFamily: "'Great Vibes', cursive",
+    background: "#3d2235",
+    backgroundSize: "200%",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    animation: "shimmerLogo 4s linear infinite",
+    lineHeight: "1.3",
+    paddingTop: "6px",
+    overflow: "visible",
+  }}>Ines</div>
           <div className="ls-sub">Junior Software Tester &amp; Developer</div>
           <div className="ls-divider" />
           <div className="ls-track">
