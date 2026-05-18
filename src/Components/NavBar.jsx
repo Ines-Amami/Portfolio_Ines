@@ -57,7 +57,7 @@ const NavBar = () => {
       }}
     >
       {/* LOGO */}
-    <div
+   <div
   onClick={() => scrollTo("home")}
   className="cursor-pointer text-5xl"
   style={{
@@ -69,7 +69,10 @@ const NavBar = () => {
     animation: "shimmerLogo 4s linear infinite",
     lineHeight: "1.3",
     paddingTop: "6px",
+    paddingLeft: "8px",
+    paddingRight: "4px",
     overflow: "visible",
+    display: "inline-block",
   }}
 >
   Ines
