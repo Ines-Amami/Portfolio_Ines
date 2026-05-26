@@ -76,7 +76,6 @@ import SquashTMLogo from "../assets/Skills/SquashTM.png";
 import TestNGLogo from "../assets/Skills/TESTNG1.png";
 import XrayLogo from "../assets/Skills/XRAY.png";
 import CucumberLogo from "../assets/Skills/cucumber.png";
-import SwaggerLogo from "../assets/Skills/Swagger.webp";
 import JUnitLogo from "../assets/Skills/junit-logo.svg";
 import zephyrLogo from "../assets/Skills/Zephyrs.png";
 
@@ -106,7 +105,6 @@ export const logoTest = [
   { id: 7, img: TestNGLogo, name: "TestNG", scale: 1.1 },
   { id: 8, img: XrayLogo, name: "Xray", scale: 1.1 },
   { id: 9, img: CucumberLogo, name: "Cucumber", scale: 1 },
-  { id: 10, img: SwaggerLogo, name: "Swagger", scale: 2 },
   { id: 11, img: JUnitLogo, name: "JUnit", scale: 1.2 },
   { id: 12, img: zephyrLogo, name: "Zephyr", scale: 1.2 },
 ];
