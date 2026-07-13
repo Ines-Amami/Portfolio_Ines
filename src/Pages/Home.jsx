@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Ines from "../assets/CV .pdf";
+import Ines from "../assets/CV.pdf";
 import Avatar from "../assets/Avatar_ines.png";
 import Particle from "../Components/Particles";
 
